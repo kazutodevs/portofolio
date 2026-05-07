@@ -46,9 +46,9 @@ export default function SkillsSection() {
     { name: 'Git / GitHub', level: 85 },
     { name: 'VS Code / IDE', level: 90 },
     { name: 'Linux / Terminal', level: 75 },
-    { name: 'Docker', level: 60 },
-    { name: 'Figma / Design', level: 70 },
-    { name: 'AWS / Cloud', level: 55 }
+    { name: 'Docker', level: 30 },
+    { name: 'Figma / Design', level: 20},
+    { name: 'AWS / Cloud', level: 10}
   ];
 
   const SkillBar = ({ name, level, delay = 0 }) => (
@@ -184,7 +184,7 @@ export default function SkillsSection() {
             variants={containerVariants}
             className="grid grid-cols-2 md:grid-cols-4 gap-4"
           >
-            {['Web3 / Blockchain', 'Machine Learning', 'Cloud Architecture', 'DevOps'].map((tech) => (
+            {['Web3 / Blockchain', 'Machine Learning', 'Cloud Architecture', 'DevOps', 'React JS', "BluePrint UE5", "AR/VR Games"].map((tech) => (
               <GlassCard
                 key={tech}
                 glowColor="cyan"

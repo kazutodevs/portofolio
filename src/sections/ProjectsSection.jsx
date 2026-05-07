@@ -156,22 +156,16 @@ export default function ProjectsSection() {
                   </div>
                 </div>
                 <div className="flex gap-4 pt-6">
-                  <motion.a
-                    href="#"
-                    whileHover={{ scale: 1.05 }}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-neon-cyan/20 border border-neon-cyan/50 rounded-lg text-neon-cyan hover:bg-neon-cyan/30 transition-all"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    View Live
-                  </motion.a>
-                  <motion.a
-                    href="#"
-                    whileHover={{ scale: 1.05 }}
-                    className="inline-flex items-center gap-2 px-6 py-3 border border-gray-500/30 rounded-lg text-gray-300 hover:border-gray-400 transition-all"
-                  >
-                    <Github className="w-4 h-4" />
-                    Source Code
-                  </motion.a>
+<motion.a
+  href="https://kazuto.my.id/store.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.05 }}
+  className="inline-flex items-center gap-2 px-6 py-3 bg-neon-cyan/20 border border-neon-cyan/50 rounded-lg text-neon-cyan hover:bg-neon-cyan/30 transition-all"
+>
+  <ExternalLink className="w-4 h-4" />
+  View Live
+</motion.a>
                 </div>
               </div>
 
@@ -181,7 +175,13 @@ export default function ProjectsSection() {
                 transition={{ duration: 4, repeat: Infinity }}
                 className="h-64 bg-gradient-to-br from-neon-cyan/20 to-neon-blue/20 rounded-lg border border-neon-cyan/30 flex items-center justify-center"
               >
-                <div className="text-6xl">💼</div>
+                <div className="text-6xl">
+  <img 
+    src="https://i.ibb.co.com/4RqD7LP8/Screenshot-from-2026-05-07-20-33-08.png"
+    alt="icon"
+    className="w-full h-full object-contain"
+  />
+</div>
               </motion.div>
             </div>
           </GlassCard>
@@ -252,7 +252,7 @@ export default function ProjectsSection() {
           className="mt-16 text-center"
         >
           <motion.a
-            href="https://github.com"
+            href="https://github.com/novalgamedev1-ctrl"
             target="_blank"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

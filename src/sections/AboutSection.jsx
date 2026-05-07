@@ -104,7 +104,7 @@ export default function AboutSection() {
                 { label: 'Years Experience', value: '3+' },
                 { label: 'Projects Completed', value: '20+' },
                 { label: 'Team Collaborations', value: '15+' },
-                { label: 'Code Commits', value: '1000+' }
+                { label: 'Code Commits', value: '2+' }
               ].map((fact, idx) => (
                 <GlassCard key={idx} glowColor="cyan" className="p-4 text-center" withHover={false}>
                   <div className="text-2xl font-bold text-neon-cyan">{fact.value}</div>
@@ -112,10 +112,28 @@ export default function AboutSection() {
                 </GlassCard>
               ))}
             </div>
-          </motion.div>
+          </motion.div> 
+
+          {/* Profile Picture */}
+  {/* Profile Picture */}
+  <div className="flex justify-center mb-8">
+    <div className="relative">
+      {/* Glow */}
+      <div className="absolute inset-0 rounded-full bg-neon-cyan/30 blur-3xl animate-pulse" />
+
+      {/* Neon Border */}
+      <div className="relative p-[4px] rounded-full bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink">
+        <img
+          src="https://i.ibb.co.com/PGkXD7BB/pepe-update.jpg"
+          alt="Profile"
+          className="w-80 h-80 rounded-full object-cover border-4 border-space-900"
+        />
+      </div>
+    </div>
+  </div>       
 
           {/* Right - Highlights */}
-          <motion.div variants={itemVariants} className="space-y-4">
+          <motion.div variants={itemVariants} className="space-y-4">     
             {highlights.map((highlight, idx) => (
               <GlassCard
                 key={idx}
@@ -145,7 +163,7 @@ export default function AboutSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mt-20 pt-20 border-t border-neon-cyan/20"
+          className="mt-0 pt-0 border-t border-neon-cyan/20"
         >
           <motion.div variants={itemVariants} className="text-center mb-12">
             <h3 className="text-2xl font-display font-bold text-white">Core Values</h3>

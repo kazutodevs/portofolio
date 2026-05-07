@@ -101,7 +101,7 @@ export default function HeroSection({ mousePosition }) {
                 Get in Touch
               </motion.a>
               <motion.a
-                href="https://github.com"
+                href="https://github.com/novalgamedev1-ctrl"
                 target="_blank"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -138,6 +138,10 @@ export default function HeroSection({ mousePosition }) {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="hidden lg:grid grid-cols-1 gap-4"
           >
+
+    
+          
+
             {/* Card 1 - Identity */}
             <GlassCard glowColor="cyan" delay={0.6} className="p-6">
               <div className="font-mono text-sm text-neon-cyan mb-4">// Identity</div>
