@@ -157,7 +157,7 @@ export default function ProjectsSection() {
                 </div>
                 <div className="flex gap-4 pt-6">
 <motion.a
-  href="https://kazuto.my.id/store.html"
+  href="https://kazuto.my.id/store"
   target="_blank"
   rel="noopener noreferrer"
   whileHover={{ scale: 1.05 }}
