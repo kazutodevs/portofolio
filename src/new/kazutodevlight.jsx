@@ -590,7 +590,7 @@ function Contact() {
 function Footer() {
   return (
     <footer style={{ padding: "32px clamp(20px, 5vw, 60px)", borderTop: "1px solid rgba(13,13,13,0.1)", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
-      <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 20, letterSpacing: "0.04em", color: "#0d0d0d" }}>KAZUTO.DEV</span>
+      <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 20, letterSpacing: "0.04em", color: "#0d0d0d" }}>KAZUTODEV</span>
       <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 11, color: "#b0b0a8", letterSpacing: "0.06em" }}>Noval Hadi Purnomo - Indonesia</span>
     </footer>
   );
