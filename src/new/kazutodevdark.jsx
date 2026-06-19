@@ -391,12 +391,20 @@ function Blob3D() {
 
 /* ─── NAV ────────────────────────────────────────────────── */
 function Nav() {
+  
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", fn, { passive: true });
     return () => window.removeEventListener("scroll", fn);
   }, []);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+useEffect(() => {
+  const onResize = () => setIsMobile(window.innerWidth <= 768);
+  window.addEventListener("resize", onResize);
+  return () => window.removeEventListener("resize", onResize);
+}, []);
 
   return (
     <nav style={{
@@ -421,16 +429,30 @@ function Nav() {
       </a>
 
       {/* Pill nav */}
-      <div className="nav-pill-group" style={{
-        display: "flex", alignItems: "center",
-        background: "rgba(255,255,255,0.04)",
-        border: "1px solid rgba(255,255,255,0.07)",
-        borderRadius: 99, padding: "4px 6px", gap: 2,
-      }}>
-        {["About", "Skills", "Experience", "Projects", "Contact"].map(l => (
-          <a key={l} href={`#${l.toLowerCase()}`} className="nav-pill-link">{l}</a>
-        ))}
-      </div>
+{!isMobile && (
+  <div
+    className="nav-pill-group"
+    style={{
+      display: "flex",
+      alignItems: "center",
+      background: "rgba(255,255,255,0.04)",
+      border: "1px solid rgba(255,255,255,0.07)",
+      borderRadius: 99,
+      padding: "4px 6px",
+      gap: 2,
+    }}
+  >
+    {["About", "Skills", "Experience", "Projects", "Contact"].map((l) => (
+      <a
+        key={l}
+        href={`#${l.toLowerCase()}`}
+        className="nav-pill-link"
+      >
+        {l}
+      </a>
+    ))}
+  </div>
+)}
 
       {/* Right CTA */}
       <a href="#contact" className="btn-lime" style={{ fontSize: 13, padding: "9px 20px" }}>
